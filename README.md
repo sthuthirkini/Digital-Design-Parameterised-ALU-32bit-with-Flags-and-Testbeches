@@ -19,9 +19,7 @@ The ALU behavior is determined by the 2-bit `ALUControl` signal:
 
 ## Test Vector Format
 
-Test vectors are structured continuously in binary format (`$readmemb`), where each row represents:
-
-$$\text{\{a, b, ALUControl, yexpected\}}$$
+Test vectors are structured continuously in binary format (`$readmemb`), where each row represents:{a, b, ALUControl, yexpected}
 
 For a default configuration of 32 bits, each test vector row totals 96 bits.
 
@@ -32,7 +30,5 @@ To compile and execute the simulation using Icarus Verilog (`iverilog`) and `vvp
 1. Compile the source files into a simulation executable:
    ```bash
    iverilog -g2012 -o alu_sim alu32bit.sv alu32bit_tv_tb.sv
+   vvp alu_sim
 
-   Run the compiled simulation via vvp to view real-time verification logs and summary results:
-    Bash
-    vvp alu_sim
