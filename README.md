@@ -14,8 +14,8 @@ The ALU behavior is determined by the 2-bit `ALUControl` signal:
 
 * **00**: Addition ($A + B$)
 * **01**: Subtraction ($A - B$) via conditional inversion and carry-in
-* **10**: Bitwise AND ($A \ \& \ B$)
-* **11**: Bitwise OR ($A \ \| \ B$)
+* **10**: Bitwise AND (A & B)
+* **11**: Bitwise OR (A | B)
 
 ## Test Vector Format
 
